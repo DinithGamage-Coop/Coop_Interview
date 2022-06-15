@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-panel responsive width="1137px" height="824px">
+   <vaadin-absolute-layout responsive width="1118px" height="1184px">
+    <vaadin-label icon="fonticon://FontAwesome/f19c" responsive width="13px" height="13px" plain-text :top="29px" :left="20px"></vaadin-label>
+    <vaadin-label style-name="large bold" responsive width="181px" plain-text :top="3px" :left="58px">
+      Approval of Board 
+    </vaadin-label>
+    <vaadin-label caption="Name With Initials (මුලකුරු සමග නම)" width="339px" height="37px" _id="label_nameWithInitials" :top="204px" :left="18px"></vaadin-label>
+    <vaadin-label caption="Address (ලිපිනය)" width="400px" height="37px" _id="label_address" :top="260px" :left="18px"></vaadin-label>
+    <vaadin-label caption="Telephone No (දුරකථන අංකය)" width="201px" height="37px" _id="label_telephoneNo" :top="146px" :left="446px"></vaadin-label>
+    <vaadin-label caption="NIC (ජා.හැ.අ)" width="202px" height="37px" _id="label_nIC" :top="205px" :left="446px"></vaadin-label>
+    <vaadin-label caption="Gender (ස්ත්‍රී/පුරුෂ භාවය)" width="185px" height="37px" _id="label_gender" :top="146px" :left="833px"></vaadin-label>
+    <vaadin-label caption="Reqested Salary (අපේක්ෂිත වැටුප)" width="185px" height="37px" _id="label_reqsalary" :top="327px" :left="833px"></vaadin-label>
+    <vaadin-label caption="Highest Qualification (ඉහළම සුදුසුකම)" width="454px" height="37px" _id="label_highestQualification" :top="331px" :left="19px"></vaadin-label>
+    <vaadin-label caption="Requesting Possition (ඉල්ලා සිටින තනතුර)" width="270px" height="37px" _id="label_requestingPossition" :top="327px" :left="446px"></vaadin-label>
+    <vaadin-label caption="Employee Mode (සේවක මාදිලිය)" width="186px" height="36px" _id="label_emp_mode" :top="206px" :left="833px"></vaadin-label>
+    <vaadin-label caption="Religion (ආගම)" width="189px" height="36px" _id="label_region" :top="264px" :left="833px"></vaadin-label>
+    <vaadin-label caption="Civil State (විවාහක/අවිවාහක බව)" width="194px" height="36px" _id="label_civil_state" :top="82px" :left="446px"></vaadin-label>
+    <vaadin-label caption="Company (ආයතනය)" width="185px" height="37px" _id="label_company" :top="82px" :left="833px"></vaadin-label>
+    <vaadin-text-field required-error="Required!" caption="Offered Salary" required width="187px" _id="textField_offed_salary" :top="389px" :left="19px"></vaadin-text-field>
+    <vaadin-text-field required-error="Required!" caption="Allowance" required width="192px" _id="textField_allwnce_1" :top="388px" :left="221px"></vaadin-text-field>
+    <vaadin-text-field required-error="Required!" caption="Travelling" required width="182px" _id="textField_allwnce_2" :top="389px" :left="435px"></vaadin-text-field>
+    <vaadin-date-field required-error="Required!" caption="Efective Date" required width="192px" _id="dateField_startdte" :top="450px" :left="221px"></vaadin-date-field>
+    <vaadin-text-area caption="Other benefits" width="1007px" height="64px" _id="text_area_otherBenefits" :top="572px" :left="19px"></vaadin-text-area>
+    <vaadin-text-area caption="Conditions" width="1005px" height="64px" _id="text_area_conditions" :top="660px" :left="19px"></vaadin-text-area>
+    <vaadin-combo-box required-error="Required!" caption="Employee Type" required width="187px" _id="combobox_emptype" :top="452px" :left="19px">
+     <option>Trainee</option>
+     <option>Intern</option>
+     <option>Contract</option>
+     <option>Permanent</option>
+    </vaadin-combo-box>
+    <vaadin-check-box caption="HR-MANAGER" width="398px" height="22px" _id="checkBox_hRM" :top="853px" :left="48px"></vaadin-check-box>
+    <vaadin-combo-box caption="CV NO" width="185px" height="37px" _id="comboBox_Cv_Nm" :top="63px" :left="19px"></vaadin-combo-box>
+    <vaadin-button style-name="friendly" width="490px" plain-text _id="button_accept" :top="737px" :left="19px">
+      Accept 
+    </vaadin-button>
+    <vaadin-button style-name="danger" width="455px" plain-text _id="button_reject" :top="736px" :left="571px">
+      Reject 
+    </vaadin-button>
+    <vaadin-label caption="Date of Birth (උපන්දිනය)" width="222px" height="37px" _id="label_dateofbirth" :top="262px" :left="446px"></vaadin-label>
+    <vaadin-combo-box required-error="Required!" caption="Branch" required _id="comboBox_branch" :top="389px" :left="633px"></vaadin-combo-box>
+    <vaadin-combo-box caption="Department" _id="comboBox_department" :top="388px" :left="833px"></vaadin-combo-box>
+    <vaadin-label caption="Position Confirmation" width="185px" height="37px" _id="label_Position_Confirmation" :top="453px" :left="833px"></vaadin-label>
+    <vaadin-button icon="fonticon://FontAwesome/f1ec" style-name="primary" width="185px" plain-text _id="button_date_cal" :top="449px" :left="633px">
+      Add Months 
+    </vaadin-button>
+    <vaadin-combo-box required-error="Required!" caption="Months Count" invalid-allowed="false" required responsive width="182px" height="35px" _id="textField_montscunt" :top="452px" :left="435px">
+     <option>1</option>
+     <option>2</option>
+     <option>3</option>
+     <option>4</option>
+     <option>5</option>
+     <option>6</option>
+     <option>7</option>
+     <option>8</option>
+     <option>9</option>
+     <option>10</option>
+     <option>11</option>
+     <option>12</option>
+    </vaadin-combo-box>
+    <vaadin-combo-box required-error="Required!" caption="Designation" required width="441px" _id="comboBox_designation" :top="512px" :left="19px"></vaadin-combo-box>
+    <vaadin-button icon="fonticon://FontAwesome/f055" style-name="primary" width="45px" plain-text _id="button_add_designation" :top="513px" :left="473px"></vaadin-button>
+    <vaadin-label width="23px" height="20px" plain-text _id="lbl_confirmation" :top="510px" :left="838px"></vaadin-label>
+    <vaadin-label icon="fonticon://FontAwesome/f0c0" width="23px" height="9px" plain-text :top="818px" :left="18px"></vaadin-label>
+    <vaadin-label style-name="large bold" width="236px" plain-text :top="790px" :left="49px">
+      HR Manager Approval 
+    </vaadin-label>
+    <vaadin-label caption="Full Name (සම්පූර්ණ නම)" width="400px" height="37px" _id="label_fullname" :top="132px" :left="19px"></vaadin-label>
+    <vaadin-text-field caption="Monthly Target" height="38px" _id="textField_monthlyTarget" :top="512px" :left="633px"></vaadin-text-field>
+    <vaadin-text-field caption="Period" _id="textField_period" :top="513px" :left="838px"></vaadin-text-field>
+    <vaadin-button style-name="friendly" plain-text _id="button_board_membr" :top="12px" :left="804px">
+      Update Board Member Count 
+    </vaadin-button>
+    <vaadin-text-field width="83px" _id="textField_board_membr" :top="13px" :left="715px"></vaadin-text-field>
+    <vaadin-button icon="fonticon://FontAwesome/f002" style-name="friendly" width="47px" plain-text _id="button_load_designation" :top="513px" :left="571px"></vaadin-button>
+    <vaadin-button style-name="primary" width="99px" plain-text _id="button_cv_view" :top="63px" :left="258px">
+      View 
+    </vaadin-button>
+   </vaadin-absolute-layout>
+  </vaadin-panel>
+ </body>
+</html>

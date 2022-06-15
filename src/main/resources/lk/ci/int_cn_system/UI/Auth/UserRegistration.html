@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.7">
+ </head>
+ <body>
+  <vaadin-panel responsive width="1103px" height="776px">
+   <vaadin-absolute-layout responsive width="1024px" height="1215px" _id="panal">
+    <vaadin-text-field required-error="Required!" caption="NIC (ජා.හැ.අ)" required responsive width="218px" _id="nic" :top="262px" :left="292px"></vaadin-text-field>
+    <vaadin-text-field required-error="Required!" caption="Full Name (සමිපූර්ණ නම)" required responsive width="562px" height="37px" _id="fullnm" :top="141px" :left="159px"></vaadin-text-field>
+    <vaadin-text-field caption="Email (විද්‍යුත් තැපෑළ)" responsive width="477px" _id="email" :top="262px" :left="530px"></vaadin-text-field>
+    <vaadin-label icon="fonticon://FontAwesome/f19c" responsive width="10px" height="10px" plain-text :top="38px" :left="26px"></vaadin-label>
+    <vaadin-button style-name="friendly" responsive width="307px" plain-text _id="button_save" :top="664px" :left="23px">
+      Save 
+    </vaadin-button>
+    <vaadin-text-field caption="Name With Initials (මුළකුරු සමග නම)" responsive width="259px" height="37px" _id="namewinti" :top="141px" :left="746px"></vaadin-text-field>
+    <vaadin-label style-name="large bold" responsive width="223px" plain-text :top="11px" :left="58px">
+      Add Employee 
+    </vaadin-label>
+    <vaadin-text-field required-error="Required!" caption="Mobile (දුරකථන අංකය)" required responsive width="202px" _id="tp" :top="203px" :left="611px"></vaadin-text-field>
+    <vaadin-combo-box required-error="Required!" caption="Gender (ස්ත්‍රී/පුරුෂ භාවය)" required width="195px" _id="gender" :top="203px" :left="26px">
+     <option>Male</option>
+     <option>Female</option>
+    </vaadin-combo-box>
+    <vaadin-table selectable width="973px" height="253px" _id="table1" :top="721px" :left="23px"></vaadin-table>
+    <vaadin-label caption="CV NO" width="141px" height="37px" plain-text _id="label_cVno" :top="83px" :left="29px"></vaadin-label>
+    <vaadin-text-field required-error="Required!" caption="Address (ලිපිනය)" required width="351px" _id="address" :top="203px" :left="243px"></vaadin-text-field>
+    <vaadin-text-field required-error="Required!" caption="Requesting Possition (ඉල්ලා සිටින තනතුර)" required width="487px" height-full _id="requestingPossition" :top="384px" :bottom="795px" :left="516px"></vaadin-text-field>
+    <vaadin-text-field required-error="Required!" caption="Reqested Salary (අපේක්ෂිත වැටුප)" required width="230px" height="37px" _id="salary" :top="324px" :left="535px"></vaadin-text-field>
+    <vaadin-combo-box required-error="Required!" caption="Company (ආයතනය)" required width="195px" _id="comboBox_company" :top="81px" :left="186px">
+     <option>General</option>
+     <option>Life</option>
+    </vaadin-combo-box>
+    <vaadin-text-field caption="Introduce by (හදුන්වා දෙනු ලබන්නා)" width="353px" _id="textField_introduceBy" :top="81px" :left="652px"></vaadin-text-field>
+    <vaadin-combo-box required-error="Required!" caption="Employee Category (සේවක කාණ්ඩය)" required width="251px" _id="comboBox_empCategory" :top="81px" :left="393px">
+     <option>Sales</option>
+     <option>Non Sales</option>
+    </vaadin-combo-box>
+    <vaadin-combo-box required-error="Required!" caption="Title" required width="116px" _id="comboBox_titel" :top="141px" :left="26px">
+     <option>Mr</option>
+     <option>Mrs</option>
+     <option>Miss</option>
+    </vaadin-combo-box>
+    <vaadin-text-field caption="Land line (නිවස)" required width="174px" _id="textField_landline" :top="203px" :left="831px"></vaadin-text-field>
+    <vaadin-text-area caption="Remaks (අදහස් හා යෝජනා)" width="410px" height="143px" _id="textArea_remark" :top="449px" :left="594px"></vaadin-text-area>
+    <vaadin-date-field required-error="Required!" caption="Date of Birth (6/16/90) (උපන්දිනය)" required width="238px" _id="dateField_dob" :top="262px" :left="29px"></vaadin-date-field>
+    <vaadin-combo-box required-error="Required!" caption="Civil Status (විවාහක/අවිවාහක බව)" required width="231px" _id="comboBox_civilstate" :top="324px" :left="26px">
+     <option>Single</option>
+     <option>Married</option>
+    </vaadin-combo-box>
+    <vaadin-combo-box required-error="Required!" caption="Employee Mode (සේවක මාදිලිය)" required width="239px" _id="comboBox_empmode" :top="324px" :left="283px">
+     <option>Training</option>
+     <option>Intern</option>
+     <option>Contract</option>
+     <option>Permanent</option>
+    </vaadin-combo-box>
+    <vaadin-text-field caption="CV Number" _id="textField_cv_no" :top="26px" :left="759px"></vaadin-text-field>
+    <vaadin-button icon="fonticon://FontAwesome/f002" plain-text _id="button_serch" :top="26px" :left="956px"></vaadin-button>
+    <vaadin-combo-box required-error="Required!" caption="Religion (ආගම)" required width="216px" _id="comboBox_religion" :top="324px" :left="785px">
+     <option>BUDDHISM</option>
+     <option>HINDUISM</option>
+     <option>CHIRISTIANITY</option>
+     <option>ISLAM</option>
+     <option>ROMAN CATHOLIC</option>
+     <option>OTHER</option>
+    </vaadin-combo-box>
+    <vaadin-combo-box required-error="Required!" caption="Highest Qualification (ඉහළම සුදුසුකම)" required width="451px" _id="comboBox_highestqualification" :top="383px" :left="26px">
+     <option>Ordinary Level</option>
+     <option>Advanced Level</option>
+     <option>Certificate Level</option>
+     <option>professional Level</option>
+     <option>Diploma Level</option>
+     <option>Degree Level</option>
+     <option>Post Graduate Level</option>
+     <option>Master Level</option>
+    </vaadin-combo-box>
+    <vaadin-button style-name="primary" width="308px" plain-text _id="button_update" :top="663px" :left="359px">
+      Update 
+    </vaadin-button>
+    <vaadin-button style-name="danger" width="297px" plain-text _id="button_clear" :top="662px" :left="702px">
+      Clear 
+    </vaadin-button>
+    <vaadin-text-field caption="Company (ආයතනය)" width="471px" _id="textField_company" :top="496px" :left="26px"></vaadin-text-field>
+    <vaadin-text-field caption="Designation (තනතුර)" width="469px" _id="textField_designation" :top="555px" :left="26px"></vaadin-text-field>
+    <vaadin-text-field caption="Duration of service (සේවා කාලසීමාව)" width="255px" height="36px" _id="textField_no_of_years" :top="613px" :left="26px"></vaadin-text-field>
+    <vaadin-label style-name="large bold" responsive width="223px" plain-text :top="437px" :left="59px">
+      Working Experience 
+    </vaadin-label>
+    <vaadin-label icon="fonticon://FontAwesome/f19c" responsive width="24px" height="16px" plain-text :top="463px" :left="29px"></vaadin-label>
+    <vaadin-upload width="336px" height="36px" _id="file_upload" :top="1019px" :left="393px"></vaadin-upload>
+    <vaadin-button icon="fonticon://FontAwesome/f067" style-name="friendly" plain-text _id="button_ATT" :top="613px" :left="552px">
+      Attach 
+    </vaadin-button>
+    <vaadin-combo-box caption="CV Number" width="205px" _id="comboBox_uploadcv" :top="614px" :left="330px">
+     <option>Option 1</option>
+     <option>Option 2</option>
+     <option>Option 3</option>
+    </vaadin-combo-box>
+   </vaadin-absolute-layout>
+  </vaadin-panel>
+ </body>
+</html>
