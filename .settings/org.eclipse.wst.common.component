@@ -7,6 +7,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-resources/gwt"/>
         <property name="java-output-path" value="/coopinterview/target/classes"/>
         <property name="component.exclusion.patterns" value="WEB-INF/classes/VAADIN/widgetsets/WEB-INF/**"/>
-        <property name="context-root" value="coopinterview"/>
+        <property name="context-root" value="Coop_Interview"/>
     </wb-module>
 </project-modules>

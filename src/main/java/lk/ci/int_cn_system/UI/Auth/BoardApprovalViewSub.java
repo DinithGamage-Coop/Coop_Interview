@@ -421,7 +421,7 @@ public class BoardApprovalViewSub extends BoardApprovalView {
 //				label_Position_Confirmation.setValue(s26);
 				otherBenefits.setValue(s27);
 
-				System.out.println(s20 + " " + s21);
+//				System.out.println(s20 + " " + s21);
 			}
 
 			rs.close();
@@ -732,7 +732,10 @@ public class BoardApprovalViewSub extends BoardApprovalView {
 			Connection co = JDBC_MY.con();
 			Statement st = co.createStatement();
 			ResultSet re = st.executeQuery("select * from cv_approval where cv_no='" + cv_no_temp + "'");
-			 
+		String	cnoo=	"";
+		String	brac="";
+		String	desi=	"";
+		String	dpt="";
 			if (re.next()) {
 				if (re.getString("hr_app") != null) {
 					app++;
@@ -758,6 +761,13 @@ public class BoardApprovalViewSub extends BoardApprovalView {
 				if (re.getString("gm_tech_app") != null) {
 					app++;
 				}
+			
+			
+			cnoo=	re.getString("cv_no");
+			brac=	re.getString("barnch");
+			desi=	re.getString("designation");
+			dpt=	re.getString("department");
+			
 			}
 
 //			String fPath=FileUtils.readFileToString(new File("\\\\\\172.20.10.16\\hr\\pathinter.txt"));
@@ -769,13 +779,21 @@ public class BoardApprovalViewSub extends BoardApprovalView {
 					Statement st1 = co.createStatement();
 					st1.executeUpdate("update cv_create set status='2' where cv_no='" + cv_no_temp + "'");
 					/// clear eka damma methanata
-					Notification.show("Successfully Approved", Type.ERROR_MESSAGE.WARNING_MESSAGE);
+					//Notification.show("Successfully Approved", Type.ERROR_MESSAGE.WARNING_MESSAGE);
+					
+					
+					
+					Notification.show(("Successfully Approved" +""+ "\nEPN: "+ cnoo+"\nBranch: " + brac+ "\nDesignation: " + desi + "\nDepartment: "+ dpt).replaceAll("null", ""),	
+					Notification.TYPE_TRAY_NOTIFICATION);
+					
+					
 					cv_no_temp = "0";
 					st1.close();
 				}
 			}
-
-			re1.close();
+		
+			
+		//	re1.close();
 			st.close();
 			co.close();
 		} catch (Exception e) {
@@ -905,7 +923,7 @@ public class BoardApprovalViewSub extends BoardApprovalView {
 		checkBox_gmtechnical.setValue(false);
 		checkBox_hOD.setEnabled(true);
 		checkBox_hOD.setValue(false);
-
+		
 		checkBox_hRM.setCaption("HR-MANAGER");
 		checkBox_hOD.setCaption("Head Of Department");
 		checkBox_director.setCaption("Director");
